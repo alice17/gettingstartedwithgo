@@ -10,7 +10,7 @@ func main() {
 
 	fmt.Scan(&input)
 	
-	if strings.Contains(input, "i") && strings.Contains(input, "a") && strings.Contains(input, "n") {
+	if strings.HasPrefix(input, "i") && strings.Contains(input, "a") && strings.HasSuffix(input, "n") {
 		fmt.Printf("Found!")
 	} else {
 		fmt.Printf("Not found!")
